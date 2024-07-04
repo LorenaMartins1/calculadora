@@ -1,4 +1,6 @@
 body {
+  background-color: rgb(166, 221, 203); 
+  color: rgb(12, 78, 78);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
@@ -9,17 +11,26 @@ body {
 
 .calculadora {
   text-align: center;
-  border: 1px solid #aaa;
+  border: 1px solid whitesmoke;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.calculadora:hover {
+  transform: scale(1.05);
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.692);
 }
 
 .operacoes button {
+  border: 1px solid rgba(255, 255, 255, 0.692);
   margin: 5px;
 }
 
 .resultado {
-  border: solid 1px #aaa;
   padding: 3px;
 }
